@@ -21,7 +21,7 @@ header {
   background-image: url("../images/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -72,6 +72,10 @@ header {
 
 .navbar-item:nth-child(8) {
   margin-right: 64px;
+}
+
+.navbar-item:hover {
+  color: #c7b299;
 }
 
 .active {
@@ -138,7 +142,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 44px;
+  margin-top: 55px;
 }
 
 .pagination-bullet {
@@ -167,5 +171,55 @@ header {
 
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 60px !important;
+}
+
+/*MAIN*/
+/*MAIN-SERVICES*/
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.service {
+  text-align: center;
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+}
+
+.service:hover {
+  color: #c7b299;
+  fill: #c7b299;
+}
+
+.service:hover .service-text {
+  color: #8c8c8c;
+}
+
+.service:hover .service-line {
+  background-color: #c7b299;
+}
+
+.service-line {
+  border: none;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.service-text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
