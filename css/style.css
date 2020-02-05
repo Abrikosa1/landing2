@@ -15,6 +15,39 @@ body {
   margin: auto;
 }
 
+.title {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.text {
+  font-family: "Montserrat",sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0;
+  margin: auto;
+  text-align: center;
+  max-width: 780px;
+}
+
+.button {
+  font-family: Raleway, sans-serif;
+  padding: 15px 40px;
+  border-radius: 3px;
+  background-color: #998675;
+  border: none;
+  border-bottom: 3px solid #736357;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 23px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 /*HEADER*/
 /*HEADER-NAVIGATION*/
 header {
@@ -117,18 +150,6 @@ header {
 }
 
 .slider-button {
-  font-family: Raleway, sans-serif;
-  width: 170px;
-  height: 53px;
-  border-radius: 3px;
-  background-color: #998675;
-  border: none;
-  border-bottom: 3px solid #736357;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 23px;
-  color: #fff;
-  text-transform: uppercase;
   margin-bottom: 100px;
 }
 
@@ -221,5 +242,52 @@ header {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 20px;
+}
+
+/*MAIN-PROMO*/
+.promo {
+  padding-top: 85px;
+  background-color: #fbfaf8;
+}
+
+.promo-images {
+  margin-bottom: 40px;
+}
+
+.purchase-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #231d1a;
+  letter-spacing: 0.25px;
+}
+
+.purchase-block-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.purchase-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+}
+
+.title-color {
+  color: #c7b299;
+}
+
+.purchase-text {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+  color: #615855;
 }
 /*# sourceMappingURL=style.css.map */
