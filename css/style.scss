@@ -226,3 +226,33 @@ header{
     margin: 0;
     color: #615855;
 }
+
+/*MAIN-PROJECTS*/
+.type-selection{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #585858;
+    text-align: center;
+}
+.type-selection input[type="radio"]{
+    display: none;
+}
+.type-selection label{
+    display:inline-block;
+    border: 2px solid #ebebeb;
+    border-radius: 3px;
+    padding: 4px 22px;
+    margin-right: 10px;
+}
+.type-selection label:last-child{
+    margin-right: 0;
+}
+.type-selection input[type="radio"]:checked + label { 
+    background-color:#998675;
+    border-color: #998675;
+    color: #fff;
+}
