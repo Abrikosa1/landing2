@@ -228,6 +228,10 @@ header{
 }
 
 /*MAIN-PROJECTS*/
+.projects{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 .type-selection{
     font-family: "Montserrat", sans-serif;
     margin-top: 40px;
@@ -255,4 +259,62 @@ header{
     background-color:#998675;
     border-color: #998675;
     color: #fff;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-card{
+    width: 370px;
+    background-color: #fbfaf8;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.project-card:hover{
+    background-color: #362f2d;
+    .card-title{
+        color: #fff;
+    }
+    .card-type{
+        color: #c7b299;
+    }
+    .card-img:before{
+        border: 20px solid transparent;
+        border-bottom: 20px solid #362f2d;
+    }
+}
+.card-img{
+    margin-bottom: 30px;
+    position: relative;
+}
+.img{
+}
+/* .card-img:after{
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid green;
+} */
+.card-img:before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 4px;
+    border: 20px solid transparent;
+    border-bottom: 20px solid #fbfaf8;
+}
+.card-title{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 14px;
+    margin-left: 30px;
+}
+.card-type{
+    margin: 0;
+    margin-left: 30px;
 }
