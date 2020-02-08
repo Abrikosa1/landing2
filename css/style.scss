@@ -450,6 +450,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .patner-image{
     height: 100%;
@@ -514,9 +515,6 @@ footer{
     padding-bottom: 20px;
     margin-bottom: 10px;  
 }
-.footer-tweet-date{
-    
-}
 .footer-post-text, .footer-tweet-text{
     color: #555555;
     font-size: 14px;
@@ -543,6 +541,14 @@ footer{
 .link-color{
     text-decoration: none;
     color: #959595;
+}
+.dribble-widget{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dribbble-img{
+    margin-bottom: 10px;
 }
 
 .footer-bottom{

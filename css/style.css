@@ -572,6 +572,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .patner-image {
@@ -686,6 +688,21 @@ footer {
 .link-color {
   text-decoration: none;
   color: #959595;
+}
+
+.dribble-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dribbble-img {
+  margin-bottom: 10px;
 }
 
 .footer-bottom {
