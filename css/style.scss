@@ -436,3 +436,20 @@ header{
     margin-bottom: 25px;
     color: #c7b299;
 }
+
+/*MAIN-PARTNERS*/
+.parnters{
+    background-image: url("../images/partners/bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+.parners-images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.patner-image{
+    height: 100%;
+}
