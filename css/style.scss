@@ -272,6 +272,7 @@ header{
     background-color: #fbfaf8;
     padding-bottom: 30px;
     margin-bottom: 30px;
+    text-align: start;
 }
 .project-card:hover{
     background-color: #362f2d;
@@ -361,4 +362,40 @@ header{
     font-size: 14px;
     font-weight: 400;
     color: #c7b299;
+}
+
+/*MAIN-MOBILE*/
+.mobile-block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 80px;
+}
+.mobile-img{
+    margin-left: 45px;
+}
+.mobile-about{
+    flex-basis: 58%;
+}
+.mobile-title{
+    text-align: left;
+}
+.mobile-text{
+    text-align: left;
+    margin-bottom: 35px;
+}
+.mobile-list{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding-left: 50px;
+}
+.list-item{
+    list-style: none;
+    background-image: url("../images/list.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 50px;
+    margin-bottom: 15px;
 }
