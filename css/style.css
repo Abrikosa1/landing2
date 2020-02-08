@@ -295,6 +295,7 @@ header {
 .projects {
   padding-top: 80px;
   padding-bottom: 80px;
+  text-align: center;
 }
 
 .type-selection {
@@ -398,5 +399,60 @@ header {
 .card-type {
   margin: 0;
   margin-left: 30px;
+}
+
+.projects-btn {
+  margin-top: 10px;
+}
+
+/*MAIN-VIDEO*/
+.video-presentation {
+  background-image: url("../images/video-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 180px;
+}
+
+.play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+  opacity: 0.3;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.play-image {
+  fill: #fff;
+}
+
+.video-title {
+  color: #fff;
+}
+
+.video-text {
+  color: #fff;
+  margin-bottom: 40px;
+  max-width: 580px;
+}
+
+.duration {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */
