@@ -13,6 +13,7 @@ body {
 .container {
   max-width: 1170px;
   margin: auto;
+  width: 95%;
 }
 
 .title {
@@ -504,5 +505,51 @@ header {
   background-size: contain;
   padding-left: 50px;
   margin-bottom: 15px;
+}
+
+/*MAIN-STATISTICS*/
+.staistics {
+  font-family: "Montserrat", sans-serif;
+  background-color: #291f1c;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+
+.statistics-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 920px;
+  margin: auto;
+}
+
+.statistics-item {
+  text-align: center;
+}
+
+.statistics-img {
+  margin-bottom: 26px;
+}
+
+.statistics-number {
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.statistics-descr {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+  color: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */
