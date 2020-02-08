@@ -61,6 +61,7 @@ header{
     margin-bottom: 85px;
 }
 .logo{
+    font-family: $font;
     display: flex;
     align-items: center;   
 }
@@ -452,4 +453,154 @@ header{
 }
 .patner-image{
     height: 100%;
+}
+
+/*FOOTER*/
+footer{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #555555;
+    background-color: #191919;
+}
+.footer-top{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-about{
+    flex-basis: 23%;
+}
+.footer-about-text{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.read-more{
+    color: #d1d1d1;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    position: relative;
+}
+.read-more:before {
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: 3px;
+    border: 5px solid transparent; 
+    border-left: 5px solid #d1d1d1;
+}
+.footer-title{
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.footer-post-date, .footer-tweet-date{
+    color: #363636;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.footer-post-date{
+    margin-bottom: 10px;
+}
+.footer-post-text{
+    padding-bottom: 20px;
+    margin-bottom: 10px;  
+}
+.footer-tweet-date{
+    
+}
+.footer-post-text, .footer-tweet-text{
+    color: #555555;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+}
+.footer-post, .tweet{
+    border-bottom: 1px solid #595f6f;
+}
+.footer-post:last-child, .tweet:last-child{
+    border: none;
+}
+.footer-post{
+    margin-bottom: 15px;
+}
+.tweet{
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.dog-or-tag{
+    color: #00bff3;
+}
+.link-color{
+    text-decoration: none;
+    color: #959595;
+}
+
+.footer-bottom{
+    background-color: #111111;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-transform: unset;
+
+}
+.copyright-text{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+.copyright-color{
+    color: #959595;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #555555;
+    }
+    a:hover{
+        color: #c7b299;
+    }
+}
+.nav-left-item{
+    margin-right: 12px;
+}
+.nav-left-item:after{
+    content:'|';
+    padding-left: 12px;
+    color: #252525;
+}
+.nav-left-item:last-child:after{
+    content: '';
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-right-item{
+    margin-left: 12px;
+}
+.nav-right-item:before{
+    content:'|';
+    padding-right: 12px;
+    color: #252525;
+}
+.nav-right-item:first-child:before{
+    content: '';
 }
