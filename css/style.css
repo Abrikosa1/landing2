@@ -16,6 +16,12 @@ body {
   width: 95%;
 }
 
+.big-container {
+  max-width: 1240px;
+  margin: auto;
+  width: 95%;
+}
+
 .title {
   font-size: 30px;
   font-weight: 600;
@@ -252,8 +258,9 @@ header {
   background-color: #fbfaf8;
 }
 
-.promo-images {
-  margin-bottom: 40px;
+.promo-img {
+  margin-top: 40px;
+  display: block;
 }
 
 .purchase-block {
@@ -386,9 +393,13 @@ header {
   content: '';
   position: absolute;
   left: 20px;
-  bottom: 4px;
+  bottom: 0;
   border: 20px solid transparent;
   border-bottom: 20px solid #fbfaf8;
+}
+
+.img {
+  display: block;
 }
 
 .card-title {
@@ -552,6 +563,206 @@ header {
   margin: 0;
   margin-bottom: 25px;
   color: #c7b299;
+}
+
+/*MAIN-POSTS*/
+.posts {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.posts-block {
+  margin-top: 40px;
+}
+
+.post-card {
+  width: 370px;
+  background-color: #fbfaf8;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  text-align: start;
+  /*     cursor: pointer; */
+}
+
+.post-card:hover {
+  background-color: #362f2d;
+}
+
+.post-card:hover .post-card-title {
+  color: #c7b299;
+}
+
+.post-card:hover .post-card-text {
+  color: #ffffff;
+}
+
+.post-card:hover .img {
+  -webkit-filter: grayscale(0.5);
+          filter: grayscale(0.5);
+}
+
+.post-card:hover .post-day {
+  background-color: #c7b299;
+}
+
+.post-card:hover .post-month {
+  background-color: #a48d72;
+}
+
+.post-card-img {
+  position: relative;
+}
+
+.post-date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.post-day {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #ffffff;
+  border-radius: 3px 3px 0 0;
+  background-color: #363636;
+  width: 50px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.post-month {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  width: 50px;
+  height: 25px;
+  border-radius: 0 0 3px 3px;
+  background-color: #252525;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.post-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 14px;
+  margin-left: 30px;
+  margin-top: 30px;
+  color: #555555;
+}
+
+.post-card-text {
+  margin: 0;
+  margin-left: 30px;
+  color: #8c8c8c;
+  margin-bottom: 30px;
+}
+
+.read-more-post {
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #c7b299;
+  text-decoration: none;
+  position: relative;
+}
+
+.read-more-post:before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 3px;
+  border: 5px solid transparent;
+  border-left: 5px solid #c7b299;
+}
+
+.posts-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.post-next {
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.post-prev {
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+.post-next, .post-prev {
+  border-radius: 50%;
+  border: 1px solid #c7b299;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 22px;
+  color: #c7b299;
+}
+
+.post-next:after {
+  content: 'next';
+}
+
+.post-prev:after {
+  content: 'prev';
+}
+
+.post-next:after, .post-prev:after {
+  font-family: swiper-icons;
+  font-size: 11px;
+}
+
+/*inner post pagination*/
+.inner-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
+  position: absolute;
+  text-align: center;
 }
 
 /*MAIN-PARTNERS*/
