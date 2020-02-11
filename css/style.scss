@@ -1082,6 +1082,7 @@ footer{
     }
     .text-area{
         margin-bottom: 15px;
+        text-align: center;
     }
     .footer-about{
         flex-basis: 80%;
@@ -1095,6 +1096,9 @@ footer{
 @media(max-width:450px){
     .logo-text{
         font-size: 28px;
+    }
+    .slider-title, .slider-subtitle, .slider-text{
+        max-width: 95%;
     }
     .cart-and-search{
         margin-right: 15px;
