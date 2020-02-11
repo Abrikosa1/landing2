@@ -26,7 +26,7 @@ var innerPostsSwiper = new Swiper('#inner-post-slider', {
 });
 
 var postsSwiper = new Swiper('#posts-slider', {
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 10,
   navigation: {
     nextEl: '.post-next',
@@ -36,6 +36,9 @@ var postsSwiper = new Swiper('#posts-slider', {
   breakpoints: {
     865: {
       slidesPerView: 3,
+    },
+    540: {
+      slidesPerView: 2,
     },
   }
 });
