@@ -27,7 +27,6 @@ var innerPostsSwiper = new Swiper('#inner-post-slider', {
 
 var postsSwiper = new Swiper('#posts-slider', {
   slidesPerView: 3,
-  loop: true,
   navigation: {
     nextEl: '.post-next',
     prevEl: '.post-prev',
