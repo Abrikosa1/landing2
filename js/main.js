@@ -26,10 +26,24 @@ var innerPostsSwiper = new Swiper('#inner-post-slider', {
 });
 
 var postsSwiper = new Swiper('#posts-slider', {
-  slidesPerView: 3,
+  slidesPerView: 2,
+  spaceBetween: 10,
   navigation: {
     nextEl: '.post-next',
     prevEl: '.post-prev',
     clickable: true,
   },
+  breakpoints: {
+    865: {
+      slidesPerView: 3,
+    },
+  }
 });
+
+
+var menuButton = document.querySelector('.menu-button');
+var menu = document.querySelector('.navbar');
+menuButton.addEventListener('click', function(){
+  menuButton.classList.toggle('menu-button-active');
+  menu.classList.toggle('header-active');
+})

@@ -48,6 +48,9 @@ body{
     color: #fff;
     text-transform: uppercase;
 }
+.bg-for-865{
+    display: none;
+}
 
 /*HEADER*/
 
@@ -97,6 +100,9 @@ header{
 }
 .cart{
     margin-right: 26px;
+}
+.menu-button{
+    display: none;
 }
 /*HEADER-NAVIGATION*/
 
@@ -207,6 +213,7 @@ header{
 .promo-img{
     margin-top: 40px;
     display: block;
+    max-width: 100%;
 }
 .purchase-block{
     padding-top: 50px;
@@ -276,7 +283,9 @@ header{
     flex-wrap: wrap;
 }
 .project-card{
-    width: 370px;
+    flex-basis: 33%;
+    /* max-width: 370px; */
+    min-width: 300px;
     background-color: #fbfaf8;
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -310,6 +319,7 @@ header{
 }
 .card-img{
     display: block;
+    max-width: 100%;
 }
 
 .card-title{
@@ -376,6 +386,7 @@ header{
     padding-top: 80px;
 }
 .mobile-img{
+    max-width: 100%;
     margin-left: 45px;
 }
 .mobile-about{
@@ -399,12 +410,13 @@ header{
     list-style: none;
     background-image: url("../images/list.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 19px;
     padding-left: 50px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
+    overflow: visible;
 }
 /*MAIN-STATISTICS*/
-.staistics{
+.statistics{
     font-family: "Montserrat", sans-serif;
     background-color: #291f1c;
     padding-top: 70px;
@@ -449,11 +461,11 @@ header{
     margin-top: 40px;    
 }
 .post-card{
-    width: 370px;
+    max-width: 370px;
     background-color: #fbfaf8;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    text-align: start;
+    text-align: center;
 /*     cursor: pointer; */
 }
 .post-card:hover{
@@ -474,8 +486,10 @@ header{
         background-color: #a48d72;
     }
 }
+.img{
+    max-width: 100%;
+}
 .post-card-img{
-
     position: relative;
 }
 .post-date{
@@ -520,17 +534,18 @@ header{
     margin: 0;
     margin-bottom: 14px;
     margin-left: 30px;
+    margin-right: 30px;
     margin-top: 30px;
     color: #555555;
 }
 .post-card-text{
     margin: 0;
     margin-left: 30px;
+    margin-right: 30px;
     color: #8c8c8c;
     margin-bottom: 30px;
 }
 .read-more-post{
-    margin-left: 30px;
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
@@ -699,7 +714,7 @@ footer{
     justify-content: space-between;
 }
 .dribbble-img{
-    margin-bottom: 10px;
+    max-width: 100%;
 }
 
 .footer-bottom{
@@ -744,7 +759,7 @@ footer{
     color: #252525;
 }
 .nav-left-item:last-child:after{
-    content: '';
+    content: none;
 }
 .nav-right{
     display: flex;
@@ -759,5 +774,282 @@ footer{
     color: #252525;
 }
 .nav-right-item:first-child:before{
-    content: '';
+    content: none;
+}
+
+@media(max-width: 950px){
+    .navbar{
+        font-size: 13px;
+    }
+    .navbar-item {
+        margin-right: 25px;
+    }
+    .navbar-item:nth-child(7) {
+        margin-right: 40px;
+    }
+    .services{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 50px;
+    }
+    .service{
+        flex-basis: 45%;
+        margin-bottom: 30px;
+    }
+    .project-cards{
+        justify-content: space-around;
+    }
+    .project-card{
+        flex-basis: unset;
+    }
+
+    .mobile-block{
+        padding-top: 50px;
+    }
+    .mobile-img{
+        /* transform: scale(0.7); */
+        width: 40%;
+        margin-left: 0;
+        display: block;
+    }
+    .mobile-about{
+        flex-basis: 65%;
+    }
+
+    .statistics{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .statistics-block {
+        justify-content: space-around;
+    }
+    .statistics-img{
+        margin-bottom: 15px;
+    }
+    .statistics-number{
+        font-size: 35px;
+    }
+    .statistics-descr{
+        font-size: 13px; 
+        margin-bottom: 15px;
+    }
+
+    .post-card-title{
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .post-card-text{
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .parners-images{
+        justify-content: space-around;
+    }
+    .partner-image-wrapper{
+        text-align: center;
+        flex-basis: 50%;
+        margin-bottom: 40px;
+    }
+    .parnters{
+        padding-top: 80px;
+        padding-bottom:40px;
+    }
+
+    .footer-top{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .footer-about{
+        flex-basis: 45%;
+    }
+}
+
+@media(max-width: 865px){
+    .slider-subtitle{
+        font-size: 32px;
+    }
+    .slider-title{
+        font-size: 46px;
+    }
+    .slider-text{
+        font-size: 14px;
+    }
+    .button{
+        font-size: 13px;
+    }
+    .service-title{
+        font-size: 20px;
+    }
+    .service-text{
+        font-size: 13px;
+    }
+    .title{
+        font-size: 26px;
+    }
+    .text{
+        font-size: 14px;
+    }
+    .purchase-block{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+    .card-type{
+        font-size: 14px;
+    }
+    .mobile-list{
+        font-size: 14px;
+    }
+    .purchase-title{
+        font-size: 20px;
+    }
+    .purchase-text{
+        font-size: 14px;
+    }
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-button-next{
+        display: none !important;
+    }
+    .menu-button {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+    .menu-button:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 10px;
+        width: 40px;
+        height: 2px;
+        background-color: #fff; 
+    }
+    .menu-button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        width: 40px;
+        height: 2px;
+        background-color: #fff;
+        transition: transform 0.2s;
+    }
+    .menu-button-active{
+        transform: rotate(90deg);
+    }
+    .menu-button-active:before{
+        transform: rotate(180deg);
+        margin-top: 0;
+    }
+    .menu-button-active:after{
+        transform: rotate(-180deg);
+        margin-top: 0;
+    }
+    .navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100px;
+        background-color: #000;
+        color: #000;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-size: 20px;
+        z-index: 10;
+    }
+    .navbar-item{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .navbar-item:nth-child(7){
+        margin: 0;
+    }
+    .header-active{
+        display: flex;
+    }
+
+    .cart-and-search{
+        margin-left: auto;
+        margin-right: 45px;
+    }
+
+
+    .video-presentation {
+        padding-top: 180px;
+        padding-bottom: 130px;
+    }
+
+    .mobile-block{
+        padding-bottom: 50px;
+        position: relative;
+    }
+    .mobile-about{
+        flex-basis: 80%;
+    }
+    .mobile-title{
+        text-align: center;
+    }
+    .mobile-text{
+        text-align: center;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .bg-for-865{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("../images/iPhone-in-hand.png") no-repeat top right;
+        opacity: 0.2;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+    .statistics{
+        justify-content: space-between;
+    }
+    .statistics-img{
+        margin-bottom: 0;
+    }
+    .statistics-number{
+        font-size: 26px;
+        margin-bottom: 0;
+    }
+    .statistics-descr{
+        font-size: 12px;
+    }
+    .footer-title{
+        font-size: 18px;
+    }
+    .footer-about-text, .footer-tweet-text, .footer-post-text{
+        font-size: 12px;
+    }
+    .footer-copyright{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .nav-left-item:last-child{
+        margin: 0;
+    }
+    .nav-right-item:first-child{
+        margin: 0;
+    }
 }
