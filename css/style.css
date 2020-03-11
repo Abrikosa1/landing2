@@ -1,6 +1,10 @@
-* {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -53,6 +57,15 @@ body {
   line-height: 23px;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #998675;
+  background-color: #fff;
+  border-bottom: 3px solid #8d8d8d;
 }
 
 .bg-for-865 {
@@ -116,6 +129,40 @@ header {
   margin-right: 29px;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  position: relative;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.navbar-item:before {
+  content: '';
+  height: 1px;
+  background-color: #c7b299;
+  width: 0;
+  position: absolute;
+  top: -2px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.navbar-item:hover:before {
+  width: 100%;
+}
+
+.navbar-item:after {
+  content: '';
+  height: 1px;
+  background-color: #c7b299;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.navbar-item:hover:after {
+  width: 100%;
 }
 
 .navbar-item:nth-child(7) {
@@ -242,11 +289,11 @@ header {
   fill: #c7b299;
 }
 
-.service:hover .service-text {
+.service:hover-text {
   color: #8c8c8c;
 }
 
-.service:hover .service-line {
+.service:hover-line {
   background-color: #c7b299;
 }
 
@@ -366,9 +413,8 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -384,6 +430,11 @@ header {
   text-align: start;
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
+  display: none;
+}
+
+.inactive-card {
+  display: none;
 }
 
 .project-card:hover {
@@ -438,7 +489,14 @@ header {
 }
 
 .projects-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 10px;
+}
+
+.projects-btn:hover {
+  background-color: #bebebe;
+  color: #000;
 }
 
 /*MAIN-VIDEO*/

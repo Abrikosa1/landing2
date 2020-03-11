@@ -1,6 +1,9 @@
 $font: Raleway, sans-serif;
-*{
+*, *:before, *:after{
     box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: $font;
@@ -47,6 +50,13 @@ body{
     line-height: 23px;
     color: #fff;
     text-transform: uppercase;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    &:hover{
+        color: #998675;
+        background-color: #fff;
+        border-bottom: 3px solid #8d8d8d;
+    }
 }
 .bg-for-865{
     display: none;
@@ -84,19 +94,47 @@ header{
     display: flex;
     align-items: center;
     margin-left: auto;
+    &-item{
+        text-decoration: none;
+        color: #fff;
+        margin-right: 29px;
+        transition: 0.2s ease-in;
+        position: relative;
+        transition: 0.3s ease-out;
+        &:before{
+            content: '';
+            height: 1px;
+            background-color: #c7b299;
+            width: 0;
+            position: absolute;
+            top: -2px;
+            transition: 0.3s ease-out;
+        }
+        &:hover:before{
+            width: 100%;
+        }
+        &:after{
+            content: '';
+            height: 1px;
+            background-color: #c7b299;
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            transition: 0.3s ease-out;
+        }
+        &:hover:after{
+            width: 100%;
+        }
+        &:nth-child(7){
+            margin-right: 64px;
+        }
+        &:hover{
+            color: #c7b299;
+        }
+    }
 }
-.navbar-item{
-    text-decoration: none;
-    color: #fff;
-    margin-right: 29px;
-    transition: 0.2s ease-in;
-}
-.navbar-item:nth-child(7){
-    margin-right: 64px;
-}
-.navbar-item:hover{
-    color: #c7b299;
-}
+
 .active{
     color: #c7b299;
 }
@@ -184,30 +222,32 @@ header{
     text-align: center;
     flex-basis: 23%;
     transition: 0.2s ease-in;
-}
-.service:hover{
-    color: #c7b299;
-    fill: #c7b299;
-    .service-text{
-        color: #8c8c8c;
+    &:hover{
+        color: #c7b299;
+        fill: #c7b299;
+        &-text{
+            color: #8c8c8c;
+        }
+        &-line{
+            background-color: #c7b299;
+        }
     }
-    .service-line{
-        background-color: #c7b299;
+    &-line{
+        border: none;
+        transition: 0.2s ease-in;
+    }
+    &-title{
+        font-size: 22px;
+        font-weight: 800;
+    }
+    &-text{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
     }
 }
-.service-line{
-    border: none;
-    transition: 0.2s ease-in;
-}
-.service-title{
-    font-size: 22px;
-    font-weight: 800;
-}
-.service-text{
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 20px;
-}
+
+
 
 /*MAIN-PROMO*/
 .promo{
@@ -287,7 +327,7 @@ header{
 
 .project-cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .project-card{
@@ -299,6 +339,10 @@ header{
     margin-bottom: 30px;
     text-align: start;
     transition: 0.2s ease-in;
+    display: none;
+}
+.inactive-card{
+    display: none;
 }
 .project-card:hover{
     background-color: #362f2d;
@@ -344,7 +388,12 @@ header{
     margin-left: 30px;
 }
 .projects-btn{
+    box-sizing: border-box;
     margin-top: 10px;
+    &:hover{
+        background-color: #bebebe;
+        color: #000;
+    }
 }
 
 
